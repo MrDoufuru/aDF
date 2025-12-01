@@ -12,6 +12,9 @@ The version for 1.12 exists on the `master` branch while a version with changes 
 * Right click the armor reading to share the value with others, or right click a debuff to announce if its up or not. 
 * Type `/adf options` to configure which debuffs are shown for you, and which chat channel announcements are made in.
 
+## Changes from this version
+* "Disabled" option for chat channel
+
 ## Known issues
 
 See https://github.com/Zebouski/aDF/issues. Pull requests are welcome
