@@ -19,7 +19,8 @@ gui_chantbl = {
    "Yell",
    "Party",
    "Raid",
-   "Raid_Warning"
+   "Raid_Warning",
+   "Disabled",
  }
 
 local last_target_change_time = GetTime()
@@ -318,7 +319,9 @@ function aDF:Update()
 			-- adfprint(msg)
 			if aDF_target == 'target' then
 				-- targettarget does not trigger events when it changes. this means it's hard to tell apart units with the same name, so we don't allow notifications for it
-				SendChatMessage(msg, gui_chan)
+				if gui_chan ~= "Disabled" then
+					SendChatMessage(msg, gui_chan)
+				end
 			end
 
 		end
